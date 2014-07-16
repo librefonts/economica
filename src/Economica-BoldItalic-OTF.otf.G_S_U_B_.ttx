@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ttFont ttLibVersion="2.4">
+
+  <GSUB>
+    <Version value="1.0"/>
+    <ScriptList>
+      <!-- ScriptCount=1 -->
+      <ScriptRecord index="0">
+        <ScriptTag value="latn"/>
+        <Script>
+          <DefaultLangSys>
+            <ReqFeatureIndex value="65535"/>
+            <!-- FeatureCount=1 -->
+            <FeatureIndex index="0" value="0"/>
+          </DefaultLangSys>
+          <!-- LangSysCount=0 -->
+        </Script>
+      </ScriptRecord>
+    </ScriptList>
+    <FeatureList>
+      <!-- FeatureCount=1 -->
+      <FeatureRecord index="0">
+        <FeatureTag value="liga"/>
+        <Feature>
+          <!-- LookupCount=1 -->
+          <LookupListIndex index="0" value="0"/>
+        </Feature>
+      </FeatureRecord>
+    </FeatureList>
+    <LookupList>
+      <!-- LookupCount=1 -->
+      <Lookup index="0">
+        <LookupType value="4"/>
+        <LookupFlag value="0"/>
+        <!-- SubTableCount=1 -->
+        <LigatureSubst index="0" Format="1">
+          <LigatureSet glyph="E">
+            <Ligature components="S" glyph="E_S"/>
+            <Ligature components="s" glyph="E_s"/>
+          </LigatureSet>
+          <LigatureSet glyph="I">
+            <Ligature components="J" glyph="I_J"/>
+          </LigatureSet>
+          <LigatureSet glyph="c">
+            <Ligature components="s" glyph="glyph65535"/>
+          </LigatureSet>
+          <LigatureSet glyph="f">
+            <Ligature components="f,l" glyph="glyph65535"/>
+            <Ligature components="f,i" glyph="f_f_i"/>
+            <Ligature components="l" glyph="fl"/>
+            <Ligature components="i" glyph="fi"/>
+            <Ligature components="f" glyph="glyph65535"/>
+            <Ligature components="t" glyph="f_t"/>
+            <Ligature components="u" glyph="f_u"/>
+          </LigatureSet>
+          <LigatureSet glyph="i">
+            <Ligature components="j" glyph="i_j"/>
+          </LigatureSet>
+          <LigatureSet glyph="o">
+            <Ligature components="t" glyph="o_t"/>
+          </LigatureSet>
+          <LigatureSet glyph="s">
+            <Ligature components="t" glyph="s_t"/>
+          </LigatureSet>
+          <LigatureSet glyph="x">
+            <Ligature components="t" glyph="x_t"/>
+          </LigatureSet>
+        </LigatureSubst>
+      </Lookup>
+    </LookupList>
+  </GSUB>
+
+</ttFont>
