@@ -1,0 +1,979 @@
+# Bake Begins!
+### (1 of 6) Copy sources
+$ cp -a /home/travis/build/fontdirectory/economica/METADATA.json /home/travis/build/fontdirectory/economica/builds/build
+$ cp -a /home/travis/build/fontdirectory/economica/DESCRIPTION.en_us.html /home/travis/build/fontdirectory/economica/builds/build
+$ cp -a /home/travis/build/fontdirectory/economica/FONTLOG.txt /home/travis/build/fontdirectory/economica/builds/build
+$ cp -a Economica-Regular.ttf.ttx Economica-Italic.ttf.ttx Economica-BoldItalic.ttf.ttx Economica-Bold.ttf.ttx src/Economica-Regular-OTF.otf.ttx src/Economica-Italic-OTF.otf.ttx src/Economica-BoldItalic-OTF.otf.ttx src/Economica-Bold-OTF.otf.ttx src/Economica-Regular-TTF.sfd src/Economica-Italic-TTF.sfd src/Economica-BoldItalic-TTF.sfd src/Economica-Bold-TTF.sfd Economica-Regular.ttf._p_r_e_p.ttx Economica-Regular.ttf._p_o_s_t.ttx Economica-Regular.ttf._n_a_m_e.ttx Economica-Regular.ttf._m_a_x_p.ttx Economica-Regular.ttf._l_o_c_a.ttx Economica-Regular.ttf._h_m_t_x.ttx Economica-Regular.ttf._h_h_e_a.ttx Economica-Regular.ttf._h_e_a_d.ttx Economica-Regular.ttf._g_l_y_f.ttx Economica-Regular.ttf._g_a_s_p.ttx Economica-Regular.ttf._c_m_a_p.ttx Economica-Regular.ttf.O_S_2f_2.ttx Economica-Regular.ttf.GlyphOrder.ttx Economica-Regular.ttf.G_S_U_B_.ttx Economica-Regular.ttf.G_P_O_S_.ttx Economica-Regular.ttf.G_D_E_F_.ttx Economica-Regular.ttf.F_F_T_M_.ttx Economica-Regular.ttf.D_S_I_G_.ttx Economica-Italic.ttf._p_r_e_p.ttx Economica-Italic.ttf._p_o_s_t.ttx Economica-Italic.ttf._n_a_m_e.ttx Economica-Italic.ttf._m_a_x_p.ttx Economica-Italic.ttf._l_o_c_a.ttx Economica-Italic.ttf._h_m_t_x.ttx Economica-Italic.ttf._h_h_e_a.ttx Economica-Italic.ttf._h_e_a_d.ttx Economica-Italic.ttf._g_l_y_f.ttx Economica-Italic.ttf._g_a_s_p.ttx Economica-Italic.ttf._c_m_a_p.ttx Economica-Italic.ttf.O_S_2f_2.ttx Economica-Italic.ttf.GlyphOrder.ttx Economica-Italic.ttf.G_S_U_B_.ttx Economica-Italic.ttf.G_P_O_S_.ttx Economica-Italic.ttf.G_D_E_F_.ttx Economica-Italic.ttf.F_F_T_M_.ttx Economica-Italic.ttf.D_S_I_G_.ttx Economica-BoldItalic.ttf._p_r_e_p.ttx Economica-BoldItalic.ttf._p_o_s_t.ttx Economica-BoldItalic.ttf._n_a_m_e.ttx Economica-BoldItalic.ttf._m_a_x_p.ttx Economica-BoldItalic.ttf._l_o_c_a.ttx Economica-BoldItalic.ttf._h_m_t_x.ttx Economica-BoldItalic.ttf._h_h_e_a.ttx Economica-BoldItalic.ttf._h_e_a_d.ttx Economica-BoldItalic.ttf._g_l_y_f.ttx Economica-BoldItalic.ttf._g_a_s_p.ttx Economica-BoldItalic.ttf._c_m_a_p.ttx Economica-BoldItalic.ttf.O_S_2f_2.ttx Economica-BoldItalic.ttf.GlyphOrder.ttx Economica-BoldItalic.ttf.G_S_U_B_.ttx Economica-BoldItalic.ttf.G_P_O_S_.ttx Economica-BoldItalic.ttf.G_D_E_F_.ttx Economica-BoldItalic.ttf.F_F_T_M_.ttx Economica-BoldItalic.ttf.D_S_I_G_.ttx Economica-Bold.ttf._p_r_e_p.ttx Economica-Bold.ttf._p_o_s_t.ttx Economica-Bold.ttf._n_a_m_e.ttx Economica-Bold.ttf._m_a_x_p.ttx Economica-Bold.ttf._l_o_c_a.ttx Economica-Bold.ttf._h_m_t_x.ttx Economica-Bold.ttf._h_h_e_a.ttx Economica-Bold.ttf._h_e_a_d.ttx Economica-Bold.ttf._g_l_y_f.ttx Economica-Bold.ttf._g_a_s_p.ttx Economica-Bold.ttf._c_m_a_p.ttx Economica-Bold.ttf.O_S_2f_2.ttx Economica-Bold.ttf.GlyphOrder.ttx Economica-Bold.ttf.G_S_U_B_.ttx Economica-Bold.ttf.G_P_O_S_.ttx Economica-Bold.ttf.G_D_E_F_.ttx Economica-Bold.ttf.F_F_T_M_.ttx Economica-Bold.ttf.D_S_I_G_.ttx src/Economica-Regular-OTF.otf._p_o_s_t.ttx src/Economica-Regular-OTF.otf._n_a_m_e.ttx src/Economica-Regular-OTF.otf._m_a_x_p.ttx src/Economica-Regular-OTF.otf._k_e_r_n.ttx src/Economica-Regular-OTF.otf._h_m_t_x.ttx src/Economica-Regular-OTF.otf._h_h_e_a.ttx src/Economica-Regular-OTF.otf._h_e_a_d.ttx src/Economica-Regular-OTF.otf._c_m_a_p.ttx src/Economica-Regular-OTF.otf.O_S_2f_2.ttx src/Economica-Regular-OTF.otf.GlyphOrder.ttx src/Economica-Regular-OTF.otf.G_S_U_B_.ttx src/Economica-Regular-OTF.otf.G_P_O_S_.ttx src/Economica-Regular-OTF.otf.C_F_F_.ttx src/Economica-Italic-OTF.otf._p_o_s_t.ttx src/Economica-Italic-OTF.otf._n_a_m_e.ttx src/Economica-Italic-OTF.otf._m_a_x_p.ttx src/Economica-Italic-OTF.otf._k_e_r_n.ttx src/Economica-Italic-OTF.otf._h_m_t_x.ttx src/Economica-Italic-OTF.otf._h_h_e_a.ttx src/Economica-Italic-OTF.otf._h_e_a_d.ttx src/Economica-Italic-OTF.otf._c_m_a_p.ttx src/Economica-Italic-OTF.otf.O_S_2f_2.ttx src/Economica-Italic-OTF.otf.GlyphOrder.ttx src/Economica-Italic-OTF.otf.G_S_U_B_.ttx src/Economica-Italic-OTF.otf.G_P_O_S_.ttx src/Economica-Italic-OTF.otf.C_F_F_.ttx src/Economica-BoldItalic-OTF.otf._p_o_s_t.ttx src/Economica-BoldItalic-OTF.otf._n_a_m_e.ttx src/Economica-BoldItalic-OTF.otf._m_a_x_p.ttx src/Economica-BoldItalic-OTF.otf._k_e_r_n.ttx src/Economica-BoldItalic-OTF.otf._h_m_t_x.ttx src/Economica-BoldItalic-OTF.otf._h_h_e_a.ttx src/Economica-BoldItalic-OTF.otf._h_e_a_d.ttx src/Economica-BoldItalic-OTF.otf._c_m_a_p.ttx src/Economica-BoldItalic-OTF.otf.O_S_2f_2.ttx src/Economica-BoldItalic-OTF.otf.GlyphOrder.ttx src/Economica-BoldItalic-OTF.otf.G_S_U_B_.ttx src/Economica-BoldItalic-OTF.otf.G_P_O_S_.ttx src/Economica-BoldItalic-OTF.otf.C_F_F_.ttx src/Economica-Bold-OTF.otf._p_o_s_t.ttx src/Economica-Bold-OTF.otf._n_a_m_e.ttx src/Economica-Bold-OTF.otf._m_a_x_p.ttx src/Economica-Bold-OTF.otf._k_e_r_n.ttx src/Economica-Bold-OTF.otf._h_m_t_x.ttx src/Economica-Bold-OTF.otf._h_h_e_a.ttx src/Economica-Bold-OTF.otf._h_e_a_d.ttx src/Economica-Bold-OTF.otf._c_m_a_p.ttx src/Economica-Bold-OTF.otf.O_S_2f_2.ttx src/Economica-Bold-OTF.otf.GlyphOrder.ttx src/Economica-Bold-OTF.otf.G_S_U_B_.ttx src/Economica-Bold-OTF.otf.G_P_O_S_.ttx src/Economica-Bold-OTF.otf.C_F_F_.ttx /home/travis/build/fontdirectory/economica/builds/build/sources
+### (2 of 6) pyfontaine
+### (3 of 6) Run upstream tests
+$ bakery-lint.py upstream-repo sources
+$ fontaine --collections subsets --text /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold-OTF.otf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic-OTF.otf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic-OTF.otf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular-OTF.otf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold.ttf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic.ttf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic.ttf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular.ttf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold-TTF.sfd /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic-TTF.sfd /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic-TTF.sfd /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular-TTF.sfd > fontaine.txt
+WARNING: Please install [PyICU](https://pypi.python.org/pypi/PyICU) toenable [feature], perhaps with: pip install pyicu
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_contours(): OK
+pyfontaine error: Not a TrueType or OpenType font (bad sfntVersion)
+pyfontaine process has been failed
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_points(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_test_prepolation_glyph_names(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_component(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_mark_to_mark(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_own_glyphs(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_bakery_yaml_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_copyright_notices_same_across_family(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_description_html_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_fontlog_txt_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_metadata_json_exists(): OK
+$ bakery-lint.py upstream-ttx Economica-Bold-OTF.otf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold-OTF.otf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ bakery-lint.py upstream-ttx Economica-BoldItalic-OTF.otf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic-OTF.otf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ bakery-lint.py upstream-ttx Economica-Italic-OTF.otf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic-OTF.otf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ bakery-lint.py upstream-ttx Economica-Regular-OTF.otf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular-OTF.otf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ bakery-lint.py upstream-ttx Economica-Bold.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold.ttf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ bakery-lint.py upstream-ttx Economica-BoldItalic.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic.ttf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ bakery-lint.py upstream-ttx Economica-Italic.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic.ttf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ bakery-lint.py upstream-ttx Economica-Regular.ttf.ttx
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular.ttf.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+$ bakery-lint.py upstream Economica-Bold-TTF.sfd
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+$ bakery-lint.py upstream Economica-BoldItalic-TTF.sfd
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+$ bakery-lint.py upstream Economica-Italic-TTF.sfd
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+$ bakery-lint.py upstream Economica-Regular-TTF.sfd
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+### (4 of 6) Convert sources to TTF
+$ ttx -d /home/travis/build/fontdirectory/economica/builds/build /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic.ttx /home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold.ttx
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold-TTF.sfd
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic-TTF.sfd
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic-TTF.sfd
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular-TTF.sfd
+Compiling "/home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Regular.ttx" to "/home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'prep' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'DSIG' table...
+Compiling "/home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Italic.ttx" to "/home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'prep' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'DSIG' table...
+Compiling "/home/travis/build/fontdirectory/economica/builds/build/sources/Economica-BoldItalic.ttx" to "/home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'prep' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'DSIG' table...
+Compiling "/home/travis/build/fontdirectory/economica/builds/build/sources/Economica-Bold.ttx" to "/home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'prep' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Parsing 'GDEF' table...
+Parsing 'GPOS' table...
+Parsing 'GSUB' table...
+Parsing 'DSIG' table...
+### Test Economica-Regular.ttf
+$ bakery-lint.py result Economica-Regular.ttf
+### Test Economica-Italic.ttf
+$ bakery-lint.py result Economica-Italic.ttf
+### Test Economica-BoldItalic.ttf
+$ bakery-lint.py result Economica-BoldItalic.ttf
+$ font2ttf.py sources/Economica-Bold-TTF.sfd Economica-Bold-TTF.ttf
+### Test Economica-Bold.ttf
+$ bakery-lint.py result Economica-Bold.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf)
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+$ font2ttf.py sources/Economica-BoldItalic-TTF.sfd Economica-BoldItalic-TTF.ttf
+### Test Economica-Bold-TTF.ttf
+$ bakery-lint.py result Economica-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf)
+$ font2ttf.py sources/Economica-Italic-TTF.sfd Economica-Italic-TTF.ttf
+### Test Economica-BoldItalic-TTF.ttf
+$ bakery-lint.py result Economica-BoldItalic-TTF.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf)
+$ font2ttf.py sources/Economica-Regular-TTF.sfd Economica-Regular-TTF.ttf
+### Test Economica-Italic-TTF.ttf
+$ bakery-lint.py result Economica-Italic-TTF.ttf
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf)
+### Test Economica-Regular-TTF.ttf
+$ bakery-lint.py result Economica-Regular-TTF.ttf
+### (5 of 6) Generate METADATA.json (genmetadata.py)
+$ genmetadata.py /home/travis/build/fontdirectory/economica/builds/build
+{} exists
+Designer's name from font is: Vicente Lamonaca
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+Original size: 26392\nGzip size: 15117
+Family Name: Economica
+PS Name: Economica-Regular
+Full Name: Economica
+Style: normal
+Weight: 400
+Filename: Economica-Regular-TTF.ttf
+Copyright: Copyright (c) 2012, Vicente Lamonaca (produccion.taller@gmail.com www.tipografia-montevideo.info www.tipotype.com)
+Family Name: Economica
+PS Name: Economica-Italic
+Full Name: Economica Italic
+Style: normal
+Weight: 400
+Filename: Economica-Italic-TTF.ttf
+Copyright: Copyright (c) 2012, Vicente Lamonaca (produccion.taller@gmail.com www.tipografia-montevideo.info www.tipotype.com)
+Family Name: Economica
+PS Name: Economica-BoldItalic
+Full Name: Economica Bold Italic
+Style: normal
+Weight: 700
+Filename: Economica-BoldItalic-TTF.ttf
+Copyright: Copyright (c) 2012, Vicente Lamonaca (produccion.taller@gmail.com www.tipografia-montevideo.info www.tipotype.com)
+Family Name: Economica
+PS Name: Economica-Bold
+Full Name: Economica Bold
+Style: normal
+Weight: 700
+Filename: Economica-Bold-TTF.ttf
+Copyright: Copyright (c) 2012, Vicente Lamonaca (produccion.taller@gmail.com www.tipografia-montevideo.info www.tipotype.com)
+Family Name: Economica
+PS Name: Economica-Bold
+Full Name: Economica Bold
+Style: normal
+Weight: 700
+Filename: Economica-Bold.ttf
+Copyright: Copyright (c) 2012, Vicente Lamonaca (produccion.taller@gmail.com www.tipografia-montevideo.info www.tipotype.com)
+Family Name: Economica
+PS Name: Economica-BoldItalic
+Full Name: Economica Bold Italic
+Style: normal
+Weight: 700
+Filename: Economica-BoldItalic.ttf
+Copyright: Copyright (c) 2012, Vicente Lamonaca (produccion.taller@gmail.com www.tipografia-montevideo.info www.tipotype.com)
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+Family Name: Economica
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+PS Name: Economica-Italic
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+Full Name: Economica Italic
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+Style: normal
+Weight: 400
+Filename: Economica-Italic.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+Copyright: Copyright (c) 2012, Vicente Lamonaca (produccion.taller@gmail.com www.tipografia-montevideo.info www.tipotype.com)
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+Family Name: Economica
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+PS Name: Economica-Regular
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+Full Name: Economica
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+Style: normal
+Weight: 400
+Filename: Economica-Regular.ttf
+Copyright: Copyright (c) 2012, Vicente Lamonaca (produccion.taller@gmail.com www.tipografia-montevideo.info www.tipotype.com)
+Error: 
+ERROR: BUILD FAILED
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+### Optimize TTF Economica-BoldItalic.ttf
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+### Optimize TTF Economica-Regular.ttf
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+$ ls -l 'Economica-BoldItalic.ttf'* # look at the size savings of that subset process
+Economica-BoldItalic.ttf.opt: 25584 bytes
+Economica-BoldItalic.ttf: 27196 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf.opt /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+### Autohint TTFs (ttfautohint) Economica-BoldItalic.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+$ ls -l 'Economica-Regular.ttf'* # look at the size savings of that subset process
+Economica-Regular.ttf.opt: 25372 bytes
+Economica-Regular.ttf: 26932 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf.opt /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+### Autohint TTFs (ttfautohint) Economica-Regular.ttf
+$ ls -l /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf: 25584 bytes
+/home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.autohint.ttf: 43332 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.autohint.ttf /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+### Subset TTFs (pyftsubset) Economica-BoldItalic.ttf
+### Optimize TTF Economica-Bold.ttf
+### Optimize TTF Economica-Italic.ttf
+### Optimize TTF Economica-Bold-TTF.ttf
+$ ls -l /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf: 25372 bytes
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.autohint.ttf: 42228 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.autohint.ttf /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+### Subset TTFs (pyftsubset) Economica-Regular.ttf
+Generate Economica-BoldItalic.latin
+$ ls -l 'Economica-Bold.ttf'* # look at the size savings of that subset process
+Economica-Bold.ttf.opt: 25816 bytes
+Economica-Bold.ttf: 27384 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf.opt /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+### Autohint TTFs (ttfautohint) Economica-Bold.ttf
+$ ls -l 'Economica-Bold-TTF.ttf'* # look at the size savings of that subset process
+Economica-Bold-TTF.ttf.opt: 25376 bytes
+Economica-Bold-TTF.ttf: 27208 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf.opt /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+### Autohint TTFs (ttfautohint) Economica-Bold-TTF.ttf
+Generate Economica-BoldItalic.menu
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic.ttf
+$ ls -l 'Economica-Italic.ttf'* # look at the size savings of that subset process
+Economica-Italic.ttf.opt: 26348 bytes
+Economica-Italic.ttf: 27928 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf.opt /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+### Autohint TTFs (ttfautohint) Economica-Italic.ttf
+Generate Economica-Regular.latin
+Generate Economica-Regular.menu
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/Economica-Regular.ttf
+$ ls -l /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf: 26348 bytes
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.autohint.ttf: 43468 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.autohint.ttf /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+### Subset TTFs (pyftsubset) Economica-Italic.ttf
+$ ls -l /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf: 25816 bytes
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.autohint.ttf: 44416 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.autohint.ttf /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+### Subset TTFs (pyftsubset) Economica-Bold.ttf
+$ ls -l /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf: 25376 bytes
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.autohint.ttf: 43572 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.autohint.ttf /home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+### Subset TTFs (pyftsubset) Economica-Bold-TTF.ttf
+Generate Economica-Italic.latin
+Generate Economica-Bold.latin
+Generate Economica-Italic.menu
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/Economica-Italic.ttf
+Generate Economica-Bold.menu
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/Economica-Bold.ttf
+Generate Economica-Bold-TTF.latin
+Generate Economica-Bold-TTF.menu
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/Economica-Bold-TTF.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+### Optimize TTF Economica-BoldItalic-TTF.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+$ ls -l 'Economica-BoldItalic-TTF.ttf'* # look at the size savings of that subset process
+Economica-BoldItalic-TTF.ttf.opt: 25184 bytes
+Economica-BoldItalic-TTF.ttf: 27060 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf.opt /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+### Autohint TTFs (ttfautohint) Economica-BoldItalic-TTF.ttf
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+$ ls -l /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf: 25184 bytes
+/home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.autohint.ttf: 42940 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.autohint.ttf /home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+### Subset TTFs (pyftsubset) Economica-BoldItalic-TTF.ttf
+Generate Economica-BoldItalic-TTF.latin
+### Optimize TTF Economica-Regular-TTF.ttf
+Generate Economica-BoldItalic-TTF.menu
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/Economica-BoldItalic-TTF.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): OK
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): OK
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+$ ls -l 'Economica-Regular-TTF.ttf'* # look at the size savings of that subset process
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+Economica-Regular-TTF.ttf.opt: 24964 bytes
+Economica-Regular-TTF.ttf: 26800 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf.opt /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+### Autohint TTFs (ttfautohint) Economica-Regular-TTF.ttf
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf.fix /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+$ ls -l /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf: 24964 bytes
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.autohint.ttf: 41772 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.autohint.ttf /home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+### Subset TTFs (pyftsubset) Economica-Regular-TTF.ttf
+Generate Economica-Regular-TTF.latin
+### Optimize TTF Economica-Italic-TTF.ttf
+Generate Economica-Regular-TTF.menu
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/Economica-Regular-TTF.ttf
+$ ls -l 'Economica-Italic-TTF.ttf'* # look at the size savings of that subset process
+Economica-Italic-TTF.ttf.opt: 25848 bytes
+Economica-Italic-TTF.ttf: 27644 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf.opt /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+### Autohint TTFs (ttfautohint) Economica-Italic-TTF.ttf
+$ ls -l /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf: 25848 bytes
+/home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.autohint.ttf: 42736 bytes
+$ mv /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.autohint.ttf /home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf
+### Subset TTFs (pyftsubset) Economica-Italic-TTF.ttf
+Generate Economica-Italic-TTF.latin
+Generate Economica-Italic-TTF.menu
+strippedname:/home/travis/build/fontdirectory/economica/builds/build/Economica-Italic-TTF.ttf

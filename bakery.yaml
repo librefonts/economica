@@ -1,0 +1,8 @@
+commit: HEAD
+process_files: [Economica-Regular.ttf.ttx, Economica-Italic.ttf.ttx, Economica-BoldItalic.ttf.ttx,
+  Economica-Bold.ttf.ttx, src/Economica-Regular-OTF.otf.ttx, src/Economica-Italic-OTF.otf.ttx,
+  src/Economica-BoldItalic-OTF.otf.ttx, src/Economica-Bold-OTF.otf.ttx, src/Economica-Regular-TTF.sfd,
+  src/Economica-Italic-TTF.sfd, src/Economica-BoldItalic-TTF.sfd, src/Economica-Bold-TTF.sfd]
+pyftsubset: --notdef-outline --name-IDs=* --hinting
+subset: [latin]
+ttfautohint: -l 7 -r 28 -G 50 -x 13 -w "G"
